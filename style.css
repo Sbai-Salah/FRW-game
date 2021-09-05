@@ -1,0 +1,97 @@
+body {
+  background: rgb(13, 13, 14);
+  font-family: "Charmonman", cursive;
+  font-family: "MedievalSharp", cursive;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(13, 13, 14);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(99, 67, 8);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(65, 43, 4);
+}
+.header {
+  color: antiquewhite;
+}
+.header h3 {
+  font-family: monospace;
+}
+.quoteHeader {
+  background: rgb(245, 172, 38);
+  color: black;
+}
+div#memory_board {
+  background: rgb(47, 66, 90);
+  border: rgb(0, 0, 0) 1px solid;
+  width: 750px;
+  height: 640px;
+  padding: 24px;
+  margin: 0px auto;
+}
+/* The container of names under the cards */
+div#memory_board > div {
+  border: rgb(0, 0, 0) 1px solid;
+  width: 70px;
+  height: 70px;
+  float: left;
+  padding: 20px;
+  padding: 15px;
+  margin: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace, cursive, Arial, Helvetica, sans-serif;
+}
+
+/* responsive part */
+@media screen and (max-width: 1024px) {
+  div#memory_board {
+    width: 90%;
+    height: 750px;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  div#memory_board {
+    width: 90%;
+    height: 130vh;
+    overflow-x: hidden;
+    height: fit-content;
+  }
+  div#memory_board > div {
+    border: rgb(0, 0, 0) 1px solid;
+    width: 35px;
+    height: 35px;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 375px) {
+  div#memory_board {
+    width: 80%;
+
+    height: 150vh;
+    overflow-x: hidden;
+  }
+}
+@media screen and (max-width: 320px) {
+  div#memory_board {
+    width: 90%;
+    height: 150vh;
+    overflow-x: hidden;
+  }
+}
